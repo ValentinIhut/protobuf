@@ -11,14 +11,14 @@ import javax.validation.constraints.NotNull;
 public class EventDto {
 
   @JsonIgnore
-  private String timestamp = Instant.now().toString();
+  private Long timestamp = Instant.now().toEpochMilli();
 
   @NotNull
   private String userId;
   @NotNull
   private String event;
 
-  public String getTimestamp() {
+  public Long getTimestamp() {
     return timestamp;
   }
 

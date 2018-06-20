@@ -10,7 +10,7 @@ import com.protobuf.example.demo.proto.EventsProto.Event;
 public class DtoToProtoConverter {
 
   public static Event convertDtoToProto(EventDto eventDto) {
-    return Event.newBuilder().setTimestamp(eventDto.getTimestamp()).setUserId(eventDto.getUserId()).setEvent(eventDto.getEvent())
+    return Event.newBuilder().setTimestamp(Long.toString(eventDto.getTimestamp())).setUserId(eventDto.getUserId()).setEvent(eventDto.getEvent())
         .build();
   }
 
