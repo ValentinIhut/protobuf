@@ -1,0 +1,9 @@
+com.protobuf.example.demo
+com.protobuf.example.demo.config
+com.protobuf.example.demo.controller
+com.protobuf.example.demo.dto
+com.protobuf.example.demo.exception
+com.protobuf.example.demo.proto
+com.protobuf.example.demo.service
+com.protobuf.example.demo.service.impl
+com.protobuf.example.demo.utils
