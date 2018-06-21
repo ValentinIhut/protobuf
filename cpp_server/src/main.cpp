@@ -2,9 +2,10 @@
 #include <socket_server.h>
 
 int main() {
-    int port = 6664;
+    int port = 9999;
+    string lofFile = "../eventLogs.txt";
     socket_server* sr = new socket_server();
-    sr->run(port);
+    sr->run(port, lofFile);
     delete sr;
     return 0;
 }
