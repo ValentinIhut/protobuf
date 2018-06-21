@@ -1,0 +1,17 @@
+server:
+  context-path: /demo
+  port: 9080
+
+management:
+  port: 9081
+  endpoints:
+    web:
+      exposure:
+       include: info,health,env,metrics
+    jmx:
+      exposure:
+        include: info,health,env,metrics
+
+socket:
+  ip: 127.0.0.1
+  port: 9999

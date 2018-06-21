@@ -1,6 +1,6 @@
 # Java protobuf events client
 
-This is a client which expose a post endpoint on a configurable http port for sending events in the following format:  
+Client which expose a post endpoint on a configurable http port for sending events in the following format:  
 ```
 {  
 "timestamp" : 1518609008,  
