@@ -77,7 +77,6 @@ void socket_server::listenLoop() {
         ev.ParseFromString(a);
         outfile << ev.timestamp() + " : " + ev.user_id() + " - " + ev.event() << endl ;
         outfile << endl;
-        outfile.flags();
         cout << "Event:\t" << endl;
         cout << "timestamo:\t" << ev.timestamp() << endl;
         cout << "UserId:\t" << ev.user_id() << endl;
